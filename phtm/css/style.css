@@ -1,0 +1,369 @@
+@font-face {
+  font-family:Myfont;
+  src:url("../fonts/NEORF.ttf")
+}
+
+* {
+  overflow: hidden;
+}
+
+html {
+  font-family: Myfont;
+  font-size: px;
+}
+
+.header-parent {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #548;
+}
+
+header {
+  background-color: #140642;
+  background: linear-gradient(225deg, #311136 0%,#07063b 100%);
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 8px 2px #444;
+  -moz-box-shadow: 0px 0px 8px 2px #444;
+  box-shadow: 0px 0px 8px 2px #326;
+  min-height: 90vh;
+  max-width: 90vw;
+  margin: auto;
+  margin-top: 5vh;
+}
+
+nav {
+  padding: 1px;
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+}
+
+nav div {
+  color: #fff;
+  width: 20%;
+  margin-top: 3em;
+  padding-left: 5%;
+}
+
+nav div p {
+  display: none;
+}
+
+
+nav ul {
+  list-style-type: none;
+  width: 80%;
+  justify-content: right;
+}
+
+nav li {
+  float: left;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #fff;
+  width: 5%;
+  padding-left: 0.3em;
+}
+
+.H-content {
+  min-width: 100vw;
+  align-items: center;
+}
+
+.H-content p {
+  color: #fff;
+  opacity: 0.7;
+}
+
+.H-content h1 {
+  color: #059ee9;
+}
+
+.H-content a {
+  color: #fff;
+  border: 2px solid #059ee9;
+  border-radius: 8px;
+  padding: 6px 18px;
+  text-decoration: none;
+}
+
+.H-text {
+  width: 80%;
+  padding: 5%;
+}
+
+.H-image {
+  width: 60%;
+}
+
+.H-image img {
+  display: none;
+}
+
+.sm-icons {
+  display: flex;
+  align-items: center;
+  width: 25vw;
+  height: 15vh;
+  padding-left: 5%;
+}
+
+
+.sm-icons img {
+  width: 33%;
+  height: auto;
+  justify-content: space-around;
+}
+
+/*
+===================================
+SERVICES SECTION AFTER THE HEADER
+===================================
+*/
+
+.services {
+  width: 70%;
+  align-items: center;
+  min-height: 100vh;
+  margin: auto;
+}
+
+.service {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.service-icon {
+  width: 10%;
+  height: auto;
+}
+
+.service p {
+  opacity: 0.7;
+}
+
+/*=======================================
+HTML PHONE
+=======================================*/
+.ph:hover {
+  background-color: #76f;
+}
+.phone {
+  margin: auto;
+  margin-bottom: 5vh;
+  min-height: 95vh;
+  max-width: 80vw;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: #888;
+  -webkit-box-shadow: 0px 0px 8px 2px #000;
+  -moz-box-shadow: 0px 0px 8px 2px #000;
+  box-shadow: 0px 0px 8px 2px #000;
+}
+
+.phone h1 {
+  color: #000;
+}
+.speaker-set {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-width: 100%;
+  height: 3vh;
+
+}
+
+.ss {
+  margin-right: 10%;
+  border-radius: 50px;
+}
+
+.speaker {
+  border: 1px solid black;
+  width: 20%;
+  height: 40%;
+}
+
+.led {
+  border: 1px solid black;
+  width: 4%;
+  height: 60%;
+}
+
+.sensor {
+  border: 1px solid black;
+  width: 4%;
+  height: 60%;
+}
+
+.screen {
+  margin: auto;
+  min-height: 85vh;
+  max-width: 78vw;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: #000;
+}
+
+.buttonx {
+  min-height: 3vh;
+  max-width: 15vw;
+  border: 1px solid black;
+  border-radius: 50px;
+  margin: auto;
+  margin-top: 4%;
+}
+
+/*=======================================
+MOVABLE BOX
+=======================================*/
+.contain {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #789;
+}
+
+.box {
+  min-height: 20vh;
+  max-width: 20vh;
+  background: #336;
+  position: relative;
+  transition-property: all;
+  transition-duration: 1s;
+  animation: 3s ease-in 1s 2 reverse both paused slidein;
+}
+
+@media screen and (min-width:800px) {
+
+  nav {
+    padding: 1px;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+  }
+
+  nav div {
+    color: #fff;
+    width: 50%;
+    margin-top: 3em;
+    padding-left: 5%;
+  }
+
+  nav h3 {}
+
+  nav ul {
+    list-style-type: none;
+    width: 50%;
+    justify-content: center;
+  }
+
+  nav li {
+    float: left;
+  }
+
+  nav ul a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 0.5em;
+    width: 100%;
+  }
+
+  header {
+    max-height: 80vh;
+    max-width: 80vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
+
+
+  .H-content {
+    display: flex;
+    min-width: 100vw;
+    height: 55vh;
+    margin-top: 5vh;
+    align-items: center;
+  }
+
+  .H-content p {
+    color: #fff;
+    opacity: 0.7;
+  }
+
+  .H-content h1 {
+    color: #059ee9;
+  }
+
+  .H-content a {
+    color: #fff;
+    border: 2px solid #059ee9;
+    border-radius: 8px;
+    padding: 6px 18px;
+    text-decoration: none;
+  }
+
+  .H-text {
+    width: 40%;
+    padding: 5%;
+  }
+
+  .H-image {
+    width: 60%;
+  }
+
+  .H-image img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 30%;
+  }
+
+  .sm-icons {
+    display: flex;
+    align-items: center;
+    width: 25vw;
+    height: 15vh;
+    padding-left: 5%;
+  }
+
+
+  .sm-icons img {
+    width: 10%;
+    height: auto;
+    justify-content: space-around;
+  }
+
+
+  /*
+===================================
+SERVICES SECTION AFTER THE HEADER
+===================================
+*/
+
+  .services {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    min-height: 100vh;
+    margin: auto;
+  }
+
+  .service {
+    width: 33.3%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .service-icon {
+    width: 10%;
+    height: auto;
+  }
+
+  .service p {
+    opacity: 0.7;
+  }
+}
